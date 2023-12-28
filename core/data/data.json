@@ -9,6 +9,7 @@
         "password":"12345678",
         "newPassword":"012345678",
         "izdavač": "Buybook",
-        "insta": "ik_buybook"
+        "insta": "ik_buybook",
+        "prijava":"Prijava korisnika"
     }
 }
