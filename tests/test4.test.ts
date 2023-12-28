@@ -22,7 +22,7 @@ beforeAll(async () => {
 
 }, 500000);
 
-test("test", async () => {
+test("Changing password test", async () => {
     await password.clickusericon();
     await password.inputemail();
     await password.inputpassword();

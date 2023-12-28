@@ -22,7 +22,7 @@ beforeAll(async () => {
 
 }, 500000);
 
-test("test", async () => {
+test("Categories test", async () => {
     await category.locatecategoryheader();
     await category.clickoureditions();
     await new Promise((resolve) => setTimeout(resolve, 5000));

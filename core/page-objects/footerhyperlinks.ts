@@ -23,11 +23,23 @@ export class Footer extends BasePage {
         super(driver);
     }
 
+    async findfooter() {
+      const footer = await this.driver.findElement(By.xpath('//footer[@class="bg-dark footer"]'));
+      await this.scrollToElement(footer);
+    }
+
     private instalink = By.xpath('//a[@class="me-3"]//i[@class="bi bi-instagram"]');
 
     async clickinstalink(){
       await this.findElementAndClickEnsuringVisible(this.instalink);
     }
+
+    private instaopenprofile = By.xpath('//h2[contains(text(), "ik_buybook")]')
+
+    async checkinstaprofile(){
+      await this.checkMatchingElements(this.instaopenprofile, testData.data.insta)
+    }
+
 
     
 }

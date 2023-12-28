@@ -1,12 +1,14 @@
 {
     "url": {
-        "homepage": "https://buybook.ba/"
+        "homepage": "https://buybook.ba/",
+        "homepage2": "https://www.instagram.com/ik_buybook/"
     },
 
     "data":{
         "email":"elma.sarajlic@stu.ibu.edu.ba",
         "password":"12345678",
         "newPassword":"012345678",
-        "izdavač": "Buybook"
+        "izdavač": "Buybook",
+        "insta": "ik_buybook"
     }
 }
