@@ -83,5 +83,34 @@ export class Password extends BasePage {
         await this.findElementAndClickEnsuringVisible(this.confirmpasswordbutton);
     }
 
+    private logout = By.xpath('//a[@href="logout.php"]');
+
+    async clicklogout(){
+        await this.findElementAndClickEnsuringVisible(this.logout);
+    }
+
+    private usericon3 = By.xpath('//div[@class="nav-item"]//a[@href="https://buybook.ba/moj-nalog"]');
+
+    async clickusericon3(){
+        await this.findElementAndClickEnsuringVisible(this.usericon3);
+    }
+
+    private emailaddress2 = By.id("email_1");
+    
+    async enteremailaddress2(){
+        await this.fillInputField(this.emailaddress2, testData.data.email);
+    }
+
+    private password2 = By.id("exampleInputPassword01");
+
+    async enterpassword2(){
+        await this.fillInputField(this.password2, testData.data.newPassword);
+    }
+
+    private loginbutton2 = By.xpath('//button[@name="giris"]');
+
+    async clickloginbutton2(){
+        await this.findElementAndClickEnsuringVisible(this.loginbutton2);
+    }
     
 }

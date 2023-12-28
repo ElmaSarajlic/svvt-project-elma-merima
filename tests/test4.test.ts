@@ -34,7 +34,19 @@ test("test", async () => {
     await password.fillnewpasswordfield();
     await password.fillnewpasswordfield2();
     await password.clickconfirmpasswordbutton();
-    await new Promise((resolve) => setTimeout(resolve, 50000));
+    await new Promise((resolve) => setTimeout(resolve, 5000));
+    //to test if it is changed we have to log out and log in again with newPassword. If it is successfull then the password has been succesfully changed.
+    await password.clicklogout();
+    await password.clickusericon3();
+    await password.enteremailaddress2();
+    await new Promise((resolve) => setTimeout(resolve, 5000));
+
+    await password.enterpassword2();
+    await new Promise((resolve) => setTimeout(resolve, 5000));
+
+    await password.clickloginbutton2();
+    await new Promise((resolve) => setTimeout(resolve, 5000));
+
 
 
 
