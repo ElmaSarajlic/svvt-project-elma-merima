@@ -1,0 +1,11 @@
+{
+    "url": {
+        "homepage": "https://buybook.ba/"
+    },
+
+    "data":{
+        "email":"elma.sarajlic@stu.ibu.edu.ba",
+        "password":"12345678",
+        "newPassword":"01234567"
+    }
+}
