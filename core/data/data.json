@@ -10,6 +10,7 @@
         "newPassword":"012345678",
         "izdavač": "Buybook",
         "insta": "ik_buybook",
-        "prijava":"Prijava korisnika"
+        "prijava":"Prijava korisnika",
+        "cart": "Moja košara (1)"
     }
 }
