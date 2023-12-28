@@ -22,7 +22,7 @@ beforeAll(async () => {
 
 }, 500000);
 
-test("Delete product from cart test", async () => { 
+test("Change language test", async () => { 
     await language.clickFlagButton();
     await language.clickChosenLanguage();
     await new Promise((resolve) => setTimeout(resolve, 5000));
