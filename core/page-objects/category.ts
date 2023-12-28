@@ -23,10 +23,33 @@ export class Category extends BasePage {
         super(driver);
     }
 
+    private categoryheader = By.xpath('//div[@class="collapse navbar-collapse w-100"]');
+
+    async locatecategoryheader(){
+      await this.findElement(this.categoryheader);
+    }
+
     private oureditions = By.xpath('//a[@href="https://buybook.ba/kategorija/nasa-izdanja-125"]');
 
     async clickoureditions(){
       await this.findElementAndClickEnsuringVisible(this.oureditions);
+    }
+
+    private booknašaizdanja = By.xpath('//a[@href="proizvod/rezervni-upaljac-5773"]');
+
+    async clickbooknašaizdanja(){
+      await this.findElementAndClickEnsuringVisible(this.booknašaizdanja);
+    }
+
+    async findIzdavača() {
+      const izdavač = await this.driver.findElement(By.xpath('//p[contains(text(), "Izdavač:")]'));
+      await this.scrollToElement(izdavač);
+    }
+
+    private izdavačcompare = By.xpath('//p[contains(text(), "Buybook")]');
+
+    async compareizdavača(){
+      await this.checkMatchingElements(this.izdavačcompare, testData.data.izdavač);
     }
 
     

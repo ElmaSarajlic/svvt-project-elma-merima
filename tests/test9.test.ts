@@ -23,7 +23,20 @@ beforeAll(async () => {
 }, 500000);
 
 test("test", async () => {
+    await category.locatecategoryheader();
     await category.clickoureditions();
+    await new Promise((resolve) => setTimeout(resolve, 5000));
+    await category.clickbooknašaizdanja();
+    await category.findIzdavača();
+    await category.compareizdavača();
+    await new Promise((resolve) => setTimeout(resolve, 5000));
+
+
+    
+
+
+
+
 
 
 }, 500000);

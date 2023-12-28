@@ -6,6 +6,7 @@
     "data":{
         "email":"elma.sarajlic@stu.ibu.edu.ba",
         "password":"12345678",
-        "newPassword":"012345678"
+        "newPassword":"012345678",
+        "izdavač": "Buybook"
     }
 }
