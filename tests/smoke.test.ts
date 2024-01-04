@@ -35,9 +35,18 @@ test("Smoke test", async () => {
     await smoke.inputgrad();
     await smoke.inputokrug();
     await smoke.clickcountry();
+    await smoke.inputzipcode();
     await new Promise((resolve) => setTimeout(resolve, 5000));
-    //await smoke.clickselectedcountry();
-    //await new Promise((resolve) => setTimeout(resolve, 5000));
+    await smoke.inputadresafield();
+    await smoke.inputnapomenafield();
+    await new Promise((resolve) => setTimeout(resolve, 5000));
+    await smoke.paymenttypefind();
+    await new Promise((resolve) => setTimeout(resolve, 5000));
+
+    await smoke.choosepaymenttype();
+    await new Promise((resolve) => setTimeout(resolve, 5000));
+
+
 
 
 

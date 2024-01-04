@@ -16,6 +16,9 @@
         "imeiprezime": "Elma Sarajlic",
         "phone":"0603305067",
         "grad":"Konjic",
-        "okrug":"Orašje"
+        "okrug":"Orašje",
+        "adresa": "Parsovici bb",
+        "napomena":"nema napomene",
+        "zip": "88409"
     }
 }

@@ -80,15 +80,38 @@ export class Smoke extends BasePage {
         await this.fillInputField(this.okrugfield, testData.data.okrug);
     }
 
-    private countrybutton = By.xpath('//select[@class="form-select"]//option[contains(text(), "Belgium (BE)")]');
+    private countrybutton = By.xpath('//select[@class="form-select"]//option[contains(text(), "Bosna i Hercegovina")]');
 
     async clickcountry(){
         await this.findElementAndClick(this.countrybutton);
     }
 
-    private selectcountry = By.xpath('//option[contains(text(), "Bosna i Hercegovina")]');
+    private zipcode = By.xpath('//input[@placeholder="Poštanski kod"]');
 
-    async clickselectedcountry(){
-        await this.findElementAndClickEnsuringVisible(this.selectcountry);
+    async inputzipcode(){
+        await this.fillInputField(this.zipcode, testData.data.zip);
+    }
+
+    private adresafield = By.xpath('//textarea[@placeholder="Adresa"]');
+
+    async inputadresafield(){
+        await this.fillInputField(this.adresafield, testData.data.adresa);
+    }
+
+    private napomenafield = By.xpath('//textarea[@placeholder="Možete napisati napomenu o narudžbi ili podatke o računu"]');
+
+    async inputnapomenafield(){
+        await this.fillInputField(this.napomenafield, testData.data.napomena);
+    }
+
+    async paymenttypefind() {
+        const paymenttypefind = await this.driver.findElement(By.xpath('//div[@class="col-12 text-center pt-3"]'));
+        await this.scrollToElement(paymenttypefind);
+      }
+
+    private paymenttype = By.xpath('//div[@data-bs-target="#paypalff"]');
+
+    async choosepaymenttype(){
+        await this.findElementAndClickEnsuringVisible(this.paymenttype);
     }
 }
