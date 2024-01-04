@@ -42,9 +42,9 @@ test("Smoke test", async () => {
     await new Promise((resolve) => setTimeout(resolve, 5000));
     await smoke.paymenttypefind();
     await new Promise((resolve) => setTimeout(resolve, 5000));
-
     await smoke.choosepaymenttype();
     await new Promise((resolve) => setTimeout(resolve, 5000));
+
 
     //await smoke.clickfinalizirajnarudzbubutton(); //da mi ne dodje knjiga nikakva na adresu
 
