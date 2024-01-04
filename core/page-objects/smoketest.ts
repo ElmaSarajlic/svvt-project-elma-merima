@@ -114,4 +114,10 @@ export class Smoke extends BasePage {
     async choosepaymenttype(){
         await this.findElementAndClickEnsuringVisible(this.paymenttype);
     }
+
+    private finalizirajnarudzbubutton = By.xpath('//button[@class="btn btn-primary w-100"]');
+
+    async clickfinalizirajnarudzbubutton(){
+        await this.findElementAndClickEnsuringVisible(this.finalizirajnarudzbubutton);
+    }
 }
