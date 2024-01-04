@@ -12,6 +12,10 @@
         "insta": "ik_buybook",
         "prijava":"Prijava korisnika",
         "cart": "Moja košara (1)",
-        "language":"English"
+        "language":"English",
+        "imeiprezime": "Elma Sarajlic",
+        "phone":"0603305067",
+        "grad":"Konjic",
+        "okrug":"Orašje"
     }
 }

@@ -22,12 +22,24 @@ beforeAll(async () => {
 
 }, 500000);
 
-test("Newsletter subscription test", async () => { 
+test("Smoke test", async () => { 
     await smoke.clickProduct();
     await smoke.addtoCartButton();
     await new Promise((resolve) => setTimeout(resolve, 5000));
     await smoke.clickcartbutton();
     await new Promise((resolve) => setTimeout(resolve, 5000));
+    await smoke.clickzavrsinarudzbubutton();
+    await smoke.inputimeiprezime();
+    await smoke.inputemail();
+    await smoke.inputphonenumber();
+    await smoke.inputgrad();
+    await smoke.inputokrug();
+    await smoke.clickcountry();
+    await new Promise((resolve) => setTimeout(resolve, 5000));
+    //await smoke.clickselectedcountry();
+    //await new Promise((resolve) => setTimeout(resolve, 5000));
+
+
 
 
 

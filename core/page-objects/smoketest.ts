@@ -42,5 +42,53 @@ export class Smoke extends BasePage {
         await this.findElementAndClick(this.CartBtn);
     }
 
+    private zavrsinarudzbubutton = By.xpath('//a[@class="btn btn-block btn-dark w-100 mb-3"]');
     
+    async clickzavrsinarudzbubutton(){
+        await this.findElementAndClickEnsuringVisible(this.zavrsinarudzbubutton);
+
+    }
+    
+
+    private imeiprezimefield = By.xpath('//input[@placeholder="Ime i prezime"]');
+
+    async inputimeiprezime(){
+        await this.fillInputField(this.imeiprezimefield, testData.data.imeiprezime);
+    }
+
+    private emailfield = By.xpath('//input[@placeholder="Vaša e-mail adresa"]');
+
+    async inputemail(){
+        await this.fillInputField(this.emailfield, testData.data.email);
+    }
+
+    private phonenumberfield = By.xpath('//input[@placeholder="Vaš broj telefona"]');
+
+    async inputphonenumber(){
+        await this.fillInputField(this.phonenumberfield, testData.data.phone);
+    }
+
+    private gradfield = By.xpath('//input[@placeholder="Grad"]');
+
+    async inputgrad(){
+        await this.fillInputField(this.gradfield, testData.data.grad);
+    }
+
+    private okrugfield = By.xpath('//input[@placeholder="Okrug"]');
+
+    async inputokrug(){
+        await this.fillInputField(this.okrugfield, testData.data.okrug);
+    }
+
+    private countrybutton = By.xpath('//select[@class="form-select"]//option[contains(text(), "Belgium (BE)")]');
+
+    async clickcountry(){
+        await this.findElementAndClick(this.countrybutton);
+    }
+
+    private selectcountry = By.xpath('//option[contains(text(), "Bosna i Hercegovina")]');
+
+    async clickselectedcountry(){
+        await this.findElementAndClickEnsuringVisible(this.selectcountry);
+    }
 }
